@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="./styles/index.css">
+    <script src="./js/index.js"></script>
 </head>
 <body>
     <input type="text" id="login"/>
-    <button id="btn-login">Connexion</button>
+    <button id="btn-login" onclick="startLogin()">Connexion</button>
+    <dialog>
+        <p id="dialog-description"></p>
+        <div class="dialog-actions">
+         <button id="dialog-ok-btn" onclick="confirmLogin()">Oui</button>
+         <button id="dialog-ko-btn" onclick="abortLogin()">Non</button>
+        </div>
+    </dialog>
+    <div class="overlay"/>
 </body>
 </html>
