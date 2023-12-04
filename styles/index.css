@@ -95,10 +95,30 @@ dialog{
   cursor: pointer;
 }
 
+#welcome-container{
+  z-index: 2;
+  cursor: pointer;
+  overflow: scroll;
+  margin: 0 auto;
+  font-size: 0.8rem;
+}
+
+#welcome{
+  width: 400px;
+}
+
+#reset-link{
+  color: #eee;
+}
+
+#reset-link a{
+  color: #eee;
+}
+
 .visible{
- display: block;
+  display: block;
 }
   
 .not-visible{
- display: none;
+  display: none;
 }
