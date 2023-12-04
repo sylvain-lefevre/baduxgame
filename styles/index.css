@@ -21,4 +21,15 @@ body{
 #return-button:hover{
     transform: translateX(-100%);
     transition: all 15s ease-in;
+#reset{
+    position: relative;
+    left: 10vw;
+    top: 10vh;
+    max-width: 10px;
+    max-height: 150px;
+    height: 100px;
+    border: none;
+}
+#reset::placeholder{
+    color: whitesmoke;
 }
