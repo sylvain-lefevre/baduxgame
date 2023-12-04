@@ -96,6 +96,7 @@ dialog{
 }
 
 #welcome-container{
+  width: 300px;
   z-index: 2;
   cursor: pointer;
   overflow: scroll;
