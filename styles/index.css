@@ -96,5 +96,9 @@ dialog{
 }
 
 .visible{
-  display: block;
+ display: block;
+}
+  
+.not-visible{
+ display: none;
 }

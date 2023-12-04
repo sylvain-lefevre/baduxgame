@@ -10,12 +10,25 @@ const descriptions = [
 
 window.onload = init;
 
-let dialogDescription, dialog, overlay;
+let dialogDescription, dialogAnswerInput, dialogOkBtn, dialogKoBtn, dialog, overlay;
+const riddle = "Captcha : Quelle est la prochaine lettre de la sequence suivante O,T,T,F,F,S,S ?"
+const answer = "E";
 
 function init() {
   dialogDescription = document.querySelector("#dialog-description");
   dialog = document.querySelector("dialog");
   overlay = document.querySelector(".overlay");
+  dialogAnswerInput = document.querySelector("#dialog-answer");
+  dialogOkBtn = document.querySelector("#dialog-ok-btn");
+  dialogKoBtn = document.querySelector("#dialog-ko-btn");
+
+  dialogAnswerInput.onchange = function(event) {
+    if (event.target.value === answer) {
+      resetRiddle();
+      hideDialog();
+      login();
+    }
+  }
 }
 
 function startLogin() {
@@ -27,16 +40,39 @@ function startLogin() {
 function confirmLogin() {
   if (confirmNb < descriptions.length - 1) {
     confirmNb++;
-    dialogDescription.innerHTML = descriptions[confirmNb];
-  } else {
-    hideDialog();
-    login();
+    displayTextDescription();
+  } else if (confirmNb === 4) {
+    confirmNb++;
+    displayRiddle();
   }
 }
 
-function abortLogin() {
-  confirmNb = 0;
-  hideDialog();
+function displayTextDescription() {
+  dialogDescription.innerHTML = descriptions[confirmNb];
+}
+
+function displayRiddle() {
+  dialogDescription.innerHTML = riddle;
+  disableDialogButtons();
+  dialogAnswerInput.classList.remove("not-visible");
+  dialogAnswerInput.classList.add("visible");
+}
+
+function resetRiddle() {
+  enableDialogButtons();
+  dialogAnswerInput.value = "";
+  dialogAnswerInput.classList.remove("visible");
+  dialogAnswerInput.classList.add("not-visible");
+}
+
+function disableDialogButtons() {
+  dialogOkBtn.setAttribute("disabled", true);
+  dialogKoBtn.setAttribute("disabled", true);
+}
+
+function enableDialogButtons() {
+  dialogOkBtn.removeAttribute("disabled");
+  dialogKoBtn.removeAttribute("disabled");
 }
 
 function openDialog() {
@@ -49,6 +85,13 @@ function hideDialog() {
   overlay.classList.remove("visible");
 }
 
+function abortLogin() {
+  confirmNb = 0;
+  hideDialog();
+  resetRiddle();
+}
+
 function login() {
+  confirmNb = 0;
   console.log("login en cours...");
 }
