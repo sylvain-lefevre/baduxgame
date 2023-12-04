@@ -48,6 +48,7 @@ body{
   overflow: hidden;
   font-size: 2rem;
   transition: 1s;
+  opacity: 0.2;
 }
 
 #btn-login:hover{
