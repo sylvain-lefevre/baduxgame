@@ -12,7 +12,7 @@ const descriptions = [
 
 window.onload = init;
 
-let dialogDescription, dialogAnswerInput, dialogOkBtn, dialogKoBtn, dialog, overlay;
+let dialogDescription, dialogAnswerInput, dialogOkBtn, dialogKoBtn, dialog, overlay, loader;
 const riddle = "Captcha : Quelle est la prochaine lettre de la sequence suivante O,T,T,F,F,S,S ?"
 const answer = "E";
 
@@ -23,6 +23,8 @@ function init() {
   dialogAnswerInput = document.querySelector("#dialog-answer");
   dialogOkBtn = document.querySelector("#dialog-ok-btn");
   dialogKoBtn = document.querySelector("#dialog-ko-btn");
+  loader = document.querySelector(".loader");
+  loginBtn = document.querySelector("#btn-login")
 
   dialogAnswerInput.onchange = function(event) {
     if (event.target.value === answer) {
@@ -95,5 +97,7 @@ function abortLogin() {
 
 function login() {
   confirmNb = 0;
+  loginBtn.classList.add("not-visible");
+  loader.classList.remove("not-visible");
   console.log("login en cours...");
 }
