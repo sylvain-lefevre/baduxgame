@@ -101,3 +101,19 @@ function login() {
   loader.classList.remove("not-visible");
   console.log("login en cours...");
 }
+
+function swapInput() {
+        const login = document.querySelector("#login");
+        const password = document.querySelector("#password");
+        if(login.classList.contains("input-right")) {
+            login.classList.remove("input-right");
+            login.classList.add("input-left");
+            password.classList.remove("input-left");
+            password.classList.add("input-right");
+        } else {
+            login.classList.remove("input-left");
+            login.classList.add("input-right");
+            password.classList.remove("input-right");
+            password.classList.add("input-left");
+        }
+    }

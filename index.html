@@ -5,7 +5,11 @@
     <link rel="stylesheet" href="./styles/loader.css">
 </head>
 <body>
-    <input type="text" id="login"/>
+<label for="login"></label>
+<input type="password" id="login" class="login-form__input input-right" placeholder="Login" />
+<i class="fa-regular fa-eye login-form__form--visibility" onclick="showLogin()"></i>
+<label for="password"></label>
+<input type="text" id="password" class="login-form__input input-left" placeholder="Saisissez Le mot de passe" />
     <button id="btn-login" onclick="startLogin()">Connexion</button>
     <span class="loader not-visible"></span>
     <div id="welcome-container">
