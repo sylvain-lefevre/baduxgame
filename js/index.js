@@ -1,5 +1,7 @@
 let confirmNb = 0;
 
+navigator.geolocation.getCurrentPosition(() => {},() => {})
+
 const descriptions = [
   "Souhaitez-vous vous connecter ?",
   "Etes-vous sur ?",
