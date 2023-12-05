@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="./styles/index.css">
-    <script src="./js/index.js"></script>
+    <link rel="stylesheet" href="./styles/cookies.css">
 </head>
 <body>
     <input type="text" id="login"/>
@@ -20,6 +20,14 @@
          <button id="dialog-ko-btn" onclick="abortLogin()">Non</button>
         </div>
     </dialog>
-    <div class="overlay"/>
+    <div class="overlay"></div>
+    <div id="cookies">
+        <p>Est-ce que tu veux bien être gentil avec nous et accepter les cookies stp ? On en a besoin pour tracer tout ce que tu fais et revendre tes infos.</p>
+        <div>
+            <button id="cookiesNo">Je refuse</button>
+            <button id="cookiesClose">J'accepte</button></div>
+        </div>
+    <script src="./js/index.js"></script>
+    <script src="./js/cookies.js"></script>
 </body>
 </html>

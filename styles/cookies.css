@@ -1,0 +1,19 @@
+#cookies{
+    position: absolute;
+    font-size: x-large;
+    bottom: 50px;
+    height: 300px;
+    width : 95%;
+    cursor: move;
+    background-color: #dddddd;
+    border: 3px solid #d3d3d3;
+    border-radius: 5px;
+    padding: 10px;
+}
+#cookies > div{
+    height: 150px;
+}
+#cookiesClose{
+    width: 50%;
+    height: 100%;
+}
