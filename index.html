@@ -3,9 +3,9 @@
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/cookies.css">
     <link rel="stylesheet" href="./styles/loader.css">
+    <link rel="stylesheet" href="./styles/form.css">
 </head>
 <body>
-    <input type="text" id="login"/>
     <button id="btn-login" onclick="startLogin()">Connexion</button>
     <span class="loader not-visible"></span>
     <div id="welcome-container">
@@ -26,7 +26,11 @@
             En cliquant sur j'accepte, je reconnais céder tous mes droits présents et à venir, y compris constitutionnels, et renoncer à tout recours devant les juridictions civiles, pénales, administratives, ordinales, extraordinaires, internationales, extra-terrestres, pour quelque motif que ce soit, y compris si je n'ai plus de shampoing (allo Nabila ?), à l'encontre des géniaux créateurs de cette interface, qui conservent tous leurs droits sur cette création, protégée par les  doigts d'auteur et les lois de la propriété intellectuelle (incluant notamment et de manière non exhaustive les articles L3458-27, R2345-76 et D8933-12 alinéa 2 et 3 a) 2° du Code de la propriété intellectuelle, issus de la transposition en droit interne de la Directive européenne sur la protection et l'irresponsabilité des créateurs d'interfaces utilisateurs)
         </p>
            <p id="reset-link">Pour reinitialiser votre mot de passe, cliquez <a href="./reset.html">ici</a></p>
-       </div>
+    </div>
+    <form>
+        <label for="login"><input type="password" id="login" placeholder="Login" /></label>
+        <label for="password"><input type="text" id="password" class="login-form__input input-left" placeholder="Saisissez Le mot de passe" /></label>
+    </form>
     <dialog>
         <p id="dialog-description"></p>
         <input id="dialog-answer" type="text" class="not-visible"/>

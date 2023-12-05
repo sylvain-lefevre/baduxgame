@@ -93,6 +93,7 @@ function abortLogin() {
   confirmNb = 0;
   hideDialog();
   resetRiddle();
+  swapInput();
 }
 
 function login() {
@@ -100,4 +101,14 @@ function login() {
   loginBtn.classList.add("not-visible");
   loader.classList.remove("not-visible");
   console.log("login en cours...");
+  swapInput();
+}
+
+function swapInput() {
+  const form = document.querySelector("form");
+  if (form.classList.contains("flex-reverse")) {
+    form.classList.remove("flex-row-reverse")
+  } else {
+    form.classList.add("flex-row-reverse")
+  }
 }
