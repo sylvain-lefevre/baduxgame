@@ -40,6 +40,9 @@ function init() {
 }
 
 function startLogin() {
+  document.getElementById("song").currentTime = 0;
+  document.getElementById("song").volume = 0.01;
+  document.getElementById("song").play();
   confirmNb = 0;
   openDialog();
   dialogDescription.innerHTML = descriptions[0];
@@ -98,14 +101,16 @@ function abortLogin() {
   hideDialog();
   resetRiddle();
   swapInput();
+  document.getElementById("song").pause();
 }
 
 function login() {
   confirmNb = 0;
   displayLoader();
   setTimeout(() => {
+    document.getElementById("song").pause();
     if (loginInput.value === username && passwordInput.value.hashCode() === password) {
-      alert("Felicitations, vous etes connecte !");
+      window.location.href = './success.html';
     } else {
       alert("Le mot de passe est incorrect");
       hideLoader();

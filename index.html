@@ -9,7 +9,9 @@
 <body>
     <button id="btn-login" onclick="startLogin()">Connexion</button>
     <span class="loader not-visible"></span>
+    <h3>Bad UX Games</h3>
     <div id="welcome-container">
+        <h1>Access Control</h1>
         <p id="welcome">
            Bonjour et bienvenue. Nous souhaitons que votre experience
         </p>
@@ -47,6 +49,10 @@
             <button id="cookiesNo">Je refuse</button>
             <button id="cookiesClose">J'accepte</button></div>
         </div>
+    <audio id="song" loop>
+        <source src="./music/attente.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
     <script src="./js/hash.js"></script>
     <script src="./js/index.js"></script>
     <script src="./js/cookies.js"></script>
