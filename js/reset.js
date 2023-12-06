@@ -57,7 +57,7 @@ document.getElementById('reset').addEventListener('change', function (event) {
         }
         if(lastIndexOk===rulesList.length-1)
         {
-            alert("Félicitations votre mot de passe respecte toutes les règles ! Votre mot de passe a été réinitialisé.");
+            alert("Félicitations votre mot de passe respecte toutes les règles ! Votre mot de passe a été réinitialisé vous pouvez retourner à la page d'accueil.");
         }
     }
 });
