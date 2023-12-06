@@ -123,3 +123,10 @@ dialog{
 .not-visible{
   display: none !important;
 }
+
+#placeholder{
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: smaller;
+    color: grey;
+}

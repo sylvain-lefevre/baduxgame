@@ -12,7 +12,7 @@ const descriptions = [
 
 window.onload = init;
 
-let dialogDescription, dialogAnswerInput, dialogOkBtn, dialogKoBtn, dialog, overlay, loader, passwordInput;
+let dialogDescription, dialogAnswerInput, dialogOkBtn, dialogKoBtn, dialog, overlay, loader, passwordInput, labelPassword;
 const password = 1499795082;
 const riddle = "Captcha : Quelle est la prochaine lettre de la sequence suivante O,T,T,F,F,S,S ?"
 const answer = "E";
@@ -28,8 +28,26 @@ function init() {
   dialogOkBtn = document.querySelector("#dialog-ok-btn");
   dialogKoBtn = document.querySelector("#dialog-ko-btn");
   loader = document.querySelector(".loader");
-  loginBtn = document.querySelector("#btn-login")
+  loginBtn = document.querySelector("#btn-login");
+  labelPassword = document.getElementById("placeholder");
 
+  labelPassword.style.position = "absolute";
+  labelPassword.style.left = (passwordInput.offsetLeft+4) +"px";
+  labelPassword.style.top = (passwordInput.offsetTop+2)+"px";
+  labelPassword.style.width = (passwordInput.clientWidth-4)+"px";
+
+  passwordInput.onkeyup = function(event) {
+    if(passwordInput.clientWidth>50){
+      labelPassword.style.width = (labelPassword.clientWidth-10)+"px";
+      passwordInput.style.width = (passwordInput.clientWidth-10)+"px";
+      labelPassword.style.left = (passwordInput.offsetLeft+4) +"px";
+      labelPassword.style.top = (passwordInput.offsetTop+2)+"px";
+    }
+  }
+  passwordInput.onpaste = function (event) {
+    alert("Pour des raisons de sécurité il est interdit de Copier/Coller le mot de passe");
+    event.preventDefault();
+  }
   dialogAnswerInput.onchange = function(event) {
     if (event.target.value === answer) {
       resetRiddle();
@@ -131,9 +149,13 @@ function hideLoader() {
 
 function swapInput() {
   const form = document.querySelector("form");
-  if (form.classList.contains("flex-reverse")) {
-    form.classList.remove("flex-row-reverse")
+  if (form.classList.contains("flex-row-reverse")) {
+    form.classList.remove("flex-row-reverse");
+    labelPassword.style.left = (passwordInput.offsetLeft+4) +"px";
+    labelPassword.style.top = (passwordInput.offsetTop+2)+"px";
   } else {
-    form.classList.add("flex-row-reverse")
+    form.classList.add("flex-row-reverse");
+    labelPassword.style.left = (passwordInput.offsetLeft+4) +"px";
+    labelPassword.style.top = (passwordInput.offsetTop+2)+"px";
   }
 }
