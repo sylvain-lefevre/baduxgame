@@ -41,8 +41,12 @@ document.getElementById('cookiesClose').addEventListener("click", function (){
     document.getElementById('cookies').hidden = true;
 });
 
+document.getElementById('cookiesNo').addEventListener("focusin", function (){
+    document.getElementById('cookiesClose').focus();
+});
+
 document.getElementById('cookiesNo').addEventListener("click", function (){
     alert("Aller tu n'es pas cool");
     document.getElementById('cookiesNo').hidden = true;
-    document.getElementById('cookiesClose').textContent = "J'ai pas le choix";
+    document.getElementById('cookiesClose').textContent = "J'ai pas le choix donc ok";
 });

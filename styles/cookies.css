@@ -13,6 +13,10 @@
 #cookies > div{
     height: 150px;
 }
+
+#cookies > div > button {
+    cursor: move;
+}
 #cookiesClose{
     width: 50%;
     height: 100%;
