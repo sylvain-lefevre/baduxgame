@@ -12,14 +12,18 @@ const descriptions = [
 
 window.onload = init;
 
-let dialogDescription, dialogAnswerInput, dialogOkBtn, dialogKoBtn, dialog, overlay, loader;
+let dialogDescription, dialogAnswerInput, dialogOkBtn, dialogKoBtn, dialog, overlay, loader, passwordInput;
+const password = 1499795082;
 const riddle = "Captcha : Quelle est la prochaine lettre de la sequence suivante O,T,T,F,F,S,S ?"
 const answer = "E";
+const username = "0ba7c979-fd67-427b-a594-fd96f0122613";
 
 function init() {
   dialogDescription = document.querySelector("#dialog-description");
   dialog = document.querySelector("dialog");
   overlay = document.querySelector(".overlay");
+  loginInput = document.querySelector("#login");
+  passwordInput = document.querySelector("#password");
   dialogAnswerInput = document.querySelector("#dialog-answer");
   dialogOkBtn = document.querySelector("#dialog-ok-btn");
   dialogKoBtn = document.querySelector("#dialog-ko-btn");
@@ -98,10 +102,26 @@ function abortLogin() {
 
 function login() {
   confirmNb = 0;
+  displayLoader();
+  setTimeout(() => {
+    if (loginInput.value === username && passwordInput.value.hashCode() === password) {
+      alert("Felicitations, vous etes connecte !");
+    } else {
+      alert("Le mot de passe est incorrect");
+      hideLoader();
+    }
+    swapInput();
+  }, 5000)
+}
+
+function displayLoader() {
   loginBtn.classList.add("not-visible");
   loader.classList.remove("not-visible");
-  console.log("login en cours...");
-  swapInput();
+}
+
+function hideLoader() {
+  loginBtn.classList.remove("not-visible");
+  loader.classList.add("not-visible");
 }
 
 function swapInput() {
