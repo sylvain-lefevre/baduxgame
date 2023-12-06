@@ -1,0 +1,33 @@
+
+#return-button{
+    position:absolute;
+    top: 50%;
+    width: 100%;
+    left: calc(100% - 4px);
+    transition: all 15s ease-in;
+    text-align: right;
+    background-color: transparent;
+    border: 1px solid rgb(231, 231, 231);
+    cursor: pointer;
+
+}
+#return-button a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+#return-button:hover {
+    transform: translateX(-100%);
+    transition: all 15s ease-in;
+}
+
+#reset{
+    position: relative;
+    left: 10vw;
+    top: 10vh;
+    max-width: 15px;
+    height: 100px;
+    border: none;
+}
+#reset::placeholder{
+    color: whitesmoke;
+}

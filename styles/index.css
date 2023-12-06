@@ -1,38 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap');
+
 body{
-    overflow-x: hidden;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h2{
+  font-weight: 900;
+  font-size: 2rem;
+  font-family: 'Poppins';
+}
+/* Left Part */
+
+.left-part{
+  background-image: url('https://images.unsplash.com/photo-1532767153582-b1a0e5145009?q=80&w=2814&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  width: 50vw;
+  max-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 0 5vw ;
+}
+.left-part h2{
+  width: 60%;
+  color: white;
 }
 
-#return-button{
-    position:absolute;
-    top: 50%;
-    width: 100%;
-    left: calc(100% - 4px);
-    transition: all 15s ease-in;
-    text-align: right;
-    background-color: transparent;
-    border: 1px solid rgb(231, 231, 231);
-    cursor: pointer;
+/* Right Part */
 
+.right-part{
+margin: 0 auto;
+position: relative;
+width: 50vw;
 }
-#return-button a{
-    color: whitesmoke;
-    text-decoration: none;
+.sign-in{
+  margin: 30vh auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-#return-button:hover {
-    transform: translateX(-100%);
-    transition: all 15s ease-in;
+.sign-in h2{
+  text-align: left;
 }
-
-#reset{
-    position: relative;
-    left: 10vw;
-    top: 10vh;
-    max-width: 25px;
-    height: 100px;
-    border: none;
+#welcome-container{
+  width: 25vw;
+  overflow-y: auto;
 }
-#reset::placeholder{
-    color: whitesmoke;
+#welcome-container::-webkit-scrollbar {
+ width: 0;
 }
 
 #btn-login{
@@ -42,13 +61,16 @@ body{
   align-items: center;
   width: 100px;
   height: 100px;
-  right: 0;
-  margin-left: 0;
-  border-radius: 50%;
+  right: 20px;
+  top: 20px;
+  border-radius: 5px;
   overflow: hidden;
   font-size: 2rem;
   transition: 1s;
-  opacity: 0.2;
+  border: none;
+  background-color: #223242;
+  color: white;
+  font-weight: 800;
 }
 
 #btn-login:hover{
@@ -56,15 +78,20 @@ body{
 }
 
 dialog{
+  position: absolute;
+  bottom: 0;
   display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 400px;
-  height: 100px;
+  min-width: 25vw;
+  height: fit-content;
+  padding: 15px;
   z-index: 10;
   border: none;
   box-shadow: 0px 0px 6px -1px #000000;
+  border-radius: 8px;
+
 }
 
 .dialog-actions{
@@ -73,13 +100,37 @@ dialog{
   justify-content: space-between;
 }
 
-#dialog-ok-btn:not(:disabled){
-  color: red;
+.dialog-actions button{
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  margin: 15px 0 0;
 }
 
-#dialog-ko-btn:not(:disabled){
-  color: green;
+#dialog-ko-btn{
+  background-color: #67b99a;
+  font-weight: 800;
 }
+
+#dialog-ko-btn[disabled]{
+  color: grey;
+  background-color: #bababa;
+  font-weight: 800;
+}
+
+#dialog-ok-btn{
+  color: rgb(137, 12, 12);
+  background-color: #FF1F1F;
+  font-weight: 800;
+}
+
+#dialog-ok-btn[disabled]{
+  color: grey;
+  background-color: #bababa;
+  font-weight: 800;
+}
+
 
 .overlay{
   position: fixed;
@@ -90,18 +141,9 @@ dialog{
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   z-index: 2;
   cursor: pointer;
-}
-
-#welcome-container{
-  width: 300px;
-  z-index: 2;
-  cursor: pointer;
-  overflow: scroll;
-  margin: 0 auto;
-  font-size: 0.8rem;
 }
 
 #welcome{
@@ -113,7 +155,8 @@ dialog{
 }
 
 #reset-link a{
-  color: #eee;
+  color: #dddddd;
+  text-decoration: none;
 }
 
 .visible{
@@ -122,11 +165,4 @@ dialog{
   
 .not-visible{
   display: none !important;
-}
-
-#placeholder{
-    white-space: nowrap;
-    overflow: hidden;
-    font-size: smaller;
-    color: grey;
 }

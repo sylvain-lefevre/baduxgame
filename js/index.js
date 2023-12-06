@@ -32,16 +32,16 @@ function init() {
   labelPassword = document.getElementById("placeholder");
 
   labelPassword.style.position = "absolute";
-  labelPassword.style.left = (passwordInput.offsetLeft+4) +"px";
-  labelPassword.style.top = (passwordInput.offsetTop+2)+"px";
-  labelPassword.style.width = (passwordInput.clientWidth-4)+"px";
+  labelPassword.style.left = (passwordInput.offsetLeft+10) +"px";
+  labelPassword.style.top = (passwordInput.offsetTop+10)+"px";
+  labelPassword.style.width = (passwordInput.clientWidth-10)+"px";
 
   passwordInput.onkeyup = function(event) {
     if(passwordInput.clientWidth>50){
       labelPassword.style.width = (labelPassword.clientWidth-10)+"px";
-      passwordInput.style.width = (passwordInput.clientWidth-10)+"px";
-      labelPassword.style.left = (passwordInput.offsetLeft+4) +"px";
-      labelPassword.style.top = (passwordInput.offsetTop+2)+"px";
+      passwordInput.style.width = (passwordInput.clientWidth-30)+"px";
+      labelPassword.style.left = (passwordInput.offsetLeft+10) +"px";
+      labelPassword.style.top = (passwordInput.offsetTop+10)+"px";
     }
   }
   passwordInput.onpaste = function (event) {
@@ -151,11 +151,11 @@ function swapInput() {
   const form = document.querySelector("form");
   if (form.classList.contains("flex-row-reverse")) {
     form.classList.remove("flex-row-reverse");
-    labelPassword.style.left = (passwordInput.offsetLeft+4) +"px";
-    labelPassword.style.top = (passwordInput.offsetTop+2)+"px";
+    labelPassword.style.left = (passwordInput.offsetLeft+10) +"px";
+    labelPassword.style.top = (passwordInput.offsetTop+10)+"px";
   } else {
     form.classList.add("flex-row-reverse");
-    labelPassword.style.left = (passwordInput.offsetLeft+4) +"px";
-    labelPassword.style.top = (passwordInput.offsetTop+2)+"px";
+    labelPassword.style.left = (passwordInput.offsetLeft+10) +"px";
+    labelPassword.style.top = (passwordInput.offsetTop+10)+"px";
   }
 }
