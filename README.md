@@ -18,7 +18,9 @@ Ce projet a été pensé et mis en oeuvre par une équipe de 8 personnes:
 La solution a été pensée de bout en bout en partant de la page suivante https://sylvain-lefevre.github.io/baduxgame/.
 
 :dart: L'objectif étant de réussir à se connecter.
+
 Votre nom de connexion est : 0ba7c979-fd67-427b-a594-fd96f0122613
+
 :question: Par contre j'ai oublié le mot de passe.. Comment faire ? 
 
 Une page spécifique vous indiquera que vous êtes connectés et que vous avez donc réussi le parcours.
@@ -96,6 +98,7 @@ Un bandeau de cookies est affiché au milieu/bas de l'écran.
 
 - Un petit bouton "Je refuse" est présent
 - Un très gros bouton "J'accepte" est présent
+- Le focus par tabulation sur le bouton "Je refuse" est impossible et renvoie le focus sur le bouton "J'accepte"
 - Au clic sur le bouton "Je refuse" une alerte avec un message s'affiche puis à la validation de l'alerte les 2 boutons sont remplacés par un bouton "Je n'ai pas le choix donc ok"
 - Le bandeau de cookies ne s'enlève qu'au clic sur le bouton "J'accepte" ou le bouton "Je n'ai pas le choix donc OK"
 - Un icon draggable est présent sur l'ensemble du bandeau dont les boutons
