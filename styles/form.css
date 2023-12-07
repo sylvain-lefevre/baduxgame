@@ -1,8 +1,31 @@
 form{
     display: flex;
+    width: 98%;
     justify-content: space-between;
+    position: absolute;
+    bottom: 10px;
+    padding: 5px;
+}
+#login{
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid rgba(0,0,0,0.4);
 }
 
-.flex-row-reverse {
-    flex-direction: row-reverse;
+#password{
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid rgba(0,0,0,0.4);
+}
+
+.flex-column-reverse {
+    flex-direction: column-reverse;
+}
+
+#placeholder{
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: medium;
+    color: grey;
 }

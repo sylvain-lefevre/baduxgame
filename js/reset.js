@@ -21,7 +21,7 @@ document.getElementById('reset').addEventListener("focusin", function (){
 
     if(!document.getElementById('rulesLabel')){
         const label =document.createElement('p');
-        label.id = 'rulesLabel';
+        label.id = 'rulesLabel';    
         label.innerText = "Votre mot de passe doit respecter :"
         rulesElem.before(label);
     }

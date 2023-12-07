@@ -1,61 +1,86 @@
 <!DOCTYPE html>
+
 <head>
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/cookies.css">
     <link rel="stylesheet" href="./styles/loader.css">
     <link rel="stylesheet" href="./styles/form.css">
-    <link rel="stylesheet" href="./styles/form.css">
 </head>
+
 <body>
+<div class="left-part">
+    <h2>Enregistrez vous pour avoir une expérience hors du commun..</h2>
+</div>
+<div class="right-part">
     <button id="btn-login" onclick="startLogin()">Connexion</button>
     <span class="loader not-visible"></span>
-    <h3>Bad UX Games</h3>
-    <div id="welcome-container">
-        <h1>Access Control</h1>
-        <p id="welcome">
-           Bonjour et bienvenue. Nous souhaitons que votre experience
-        </p>
-        <p style="font-size: small">
-            utilisateur soit optimale lors de votre navigation. Pour vous connecter, il suffit de cliquer sur le bouton ergonomique de connexion prevu à cet effet. Mais avant cela, il va falloir rentrer votre nom d'utilisateur ainsi que votre mot de passe. Pour ce faire, munissez-vous de votre clavier et appuyez sur les lettres contenues dans votre nom d'utilisateur ainsi que votre mot de passe.
-        </p >
-        <p style="font-size: large">
-        Pour vous connecter, il suffit de
-        </p>
-        <p style="font-size: xx-small">cliquer sur le bouton ergonomique de connexion prevu à cet effet. </p>
-        <p style="font-size: x-large">
-        Mais avant cela, il va falloir rentrer votre nom d'utilisateur ainsi que votre mot de passe. Pour ce faire, munissez-vous de votre clavier et appuyez sur les lettres contenues dans votre nom d'utilisateur ainsi que votre mot de passe.
-        </p>
-        <p>
-            En cliquant sur j'accepte, je reconnais céder tous mes droits présents et à venir, y compris constitutionnels, et renoncer à tout recours devant les juridictions civiles, pénales, administratives, ordinales, extraordinaires, internationales, extra-terrestres, pour quelque motif que ce soit, y compris si je n'ai plus de shampoing (allo Nabila ?), à l'encontre des géniaux créateurs de cette interface, qui conservent tous leurs droits sur cette création, protégée par les  doigts d'auteur et les lois de la propriété intellectuelle (incluant notamment et de manière non exhaustive les articles L3458-27, R2345-76 et D8933-12 alinéa 2 et 3 a) 2° du Code de la propriété intellectuelle, issus de la transposition en droit interne de la Directive européenne sur la protection et l'irresponsabilité des créateurs d'interfaces utilisateurs)
-        </p>
-           <p id="reset-link">Pour reinitialiser votre mot de passe, cliquez <a href="./reset.html">ici</a></p>
+    <div class="sign-in">
+        <h3>Bad UX Games</h3>
+        <div id="welcome-container">
+            <h1>Access Control</h1>
+            <p id="welcome">
+                Bonjour et bienvenue. Nous souhaitons que votre experience
+            </p>
+            <p style="font-size: small">
+                utilisateur soit optimale lors de votre navigation. Pour vous connecter, il suffit de cliquer sur le
+                bouton ergonomique de connexion prevu à cet effet. Mais avant cela, il va falloir rentrer votre nom
+                d'utilisateur ainsi que votre mot de passe. Pour ce faire, munissez-vous de votre clavier et appuyez sur
+                les lettres contenues dans votre nom d'utilisateur ainsi que votre mot de passe.
+            </p>
+            <p style="font-size: large">
+                Pour vous connecter, il suffit de
+            </p>
+            <p style="font-size: xx-small">cliquer sur le bouton ergonomique de connexion prevu à cet effet. </p>
+            <p style="font-size: x-large">
+                Mais avant cela, il va falloir rentrer votre nom d'utilisateur ainsi que votre mot de passe. Pour ce
+                faire, munissez-vous de votre clavier et appuyez sur les lettres contenues dans votre nom d'utilisateur
+                ainsi que votre mot de passe.
+            </p>
+            <p>
+                En cliquant sur j'accepte, je reconnais céder tous mes droits présents et à venir, y compris
+                constitutionnels, et renoncer à tout recours devant les juridictions civiles, pénales, administratives,
+                ordinales, extraordinaires, internationales, extra-terrestres, pour quelque motif que ce soit, y compris
+                si je n'ai plus de shampoing (allo Nabila ?), à l'encontre des géniaux créateurs de cette interface, qui
+                conservent tous leurs droits sur cette création, protégée par les doigts d'auteur et les lois de la
+                propriété intellectuelle (incluant notamment et de manière non exhaustive les articles L3458-27,
+                R2345-76 et D8933-12 alinéa 2 et 3 a) 2° du Code de la propriété intellectuelle, issus de la
+                transposition en droit interne de la Directive européenne sur la protection et l'irresponsabilité des
+                créateurs d'interfaces utilisateurs)
+            </p>
+            <p id="reset-link">Pour reinitialiser votre mot de passe, cliquez <a href="./reset.html">ici</a></p>
+        </div>
     </div>
-    <form>
-        <label for="login"><input type="password" id="login" placeholder="Mon nom quand je veux me connecter" /></label>
-        <label for="password"><input type="text" id="password" /></label>
-        <div id="placeholder">Saississez Le mot de passe</div>
-    </form>
-    <dialog>
-        <p id="dialog-description"></p>
-        <input id="dialog-answer" type="text" class="not-visible"/>
-        <div class="dialog-actions">
-         <button id="dialog-ok-btn" onclick="confirmLogin()">Oui</button>
-         <button id="dialog-ko-btn" onclick="abortLogin()">Non</button>
-        </div>
-    </dialog>
-    <div class="overlay"></div>
-    <div id="cookies">
-        <p>Est-ce que tu veux bien être gentil avec nous et accepter les cookies stp ? On en a besoin pour tracer tout ce que tu fais et revendre tes infos.</p>
-        <div>
-            <button id="cookiesNo">Je refuse</button>
-            <button id="cookiesClose">J'accepte</button></div>
-        </div>
-    <audio id="song" loop>
-        <source src="./music/attente.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-    <script src="./js/hash.js"></script>
-    <script src="./js/index.js"></script>
-    <script src="./js/cookies.js"></script>
+</div>
+<form>
+    <label for="login"><input type="password" id="login"
+                              placeholder="Mon nom quand je veux me connecter"/></label>
+    <label for="password"><input type="text" id="password"/></label>
+    <div id="placeholder">Saississez Le mot de passe</div>
+</form>
+<dialog>
+    <p id="dialog-description"></p>
+    <input id="dialog-answer" type="text" class="not-visible"/>
+    <div class="dialog-actions">
+        <button id="dialog-ok-btn" onclick="confirmLogin()">Oui</button>
+        <button id="dialog-ko-btn" onclick="abortLogin()">Non</button>
+    </div>
+</dialog>
+<div class="overlay"></div>
+<div id="cookies">
+    <p>Est-ce que tu veux bien être gentil avec nous et accepter les cookies stp ? On en a besoin pour tracer tout
+        ce que tu fais et revendre tes infos.</p>
+    <div class="cookiesButton">
+        <button id="cookiesNo">Je refuse</button>
+        <button id="cookiesClose">J'accepte</button>
+    </div>
+</div>
+<audio id="song" loop>
+    <source src="./music/attente.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+<script src="./js/hash.js"></script>
+<script src="./js/index.js"></script>
+<script src="./js/cookies.js"></script>
 </body>
+
 </html>
