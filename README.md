@@ -30,6 +30,8 @@ L'ensemble de la solution est prévu pour atteindre le but de connexion.
 
 :construction: Aucune voie sans issue n'existe. Tout est pensé pour pouvoir naviguer depuis les composants dans l'IHM.
 
+Avec le son c'est mieux :notes:
+
 Plusieurs comportements peuvent s'apparenter à un bug mais il est fort possible que ça n'en soit pas un.
 La liste complète des fonctionnalités implémentées est disponible ci-après.
 La solution est aussi indiquée tout en bas de cette page.
@@ -52,6 +54,7 @@ Chacun comporte ses spécificités
 ##### Champ mot de passe
 
 - Contient un faux placeholder qui est simplement un texte par dessus
+- Au clic sur le faux placeholder le focus est mis sur l'input password
 - Se réduit à chaque lettre tapée dans le champ jusqu'à une limite de 50 pixels
 
 #### Texte de bienvenue
@@ -105,7 +108,10 @@ Un bandeau de cookies est affiché au milieu/bas de l'écran.
 - Le bandeau peut être déplacé avec la souris mais lorsque la souris est déplacée il revient à sa place initiale
 
 #### Titres
-Deux titres sont présents avec une mauvaise hiérarchie (h3 puis h1)
+Plusieurs titres sont présents avec une mauvaise hiérarchie (h2 puis h3 puis h1)
+
+#### Demande de localisation
+Une demande de localisation est présente au chargelent de la page
 
 ### Page réinitialisation de mot de passe (reset.html)
 
