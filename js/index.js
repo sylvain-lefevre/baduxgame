@@ -44,6 +44,10 @@ function init() {
       labelPassword.style.top = (passwordInput.offsetTop+10)+"px";
     }
   }
+  labelPassword.onclick = function (){
+    passwordInput.focus();
+  }
+
   passwordInput.onpaste = function (event) {
     alert("Pour des raisons de sécurité il est interdit de Copier/Coller le mot de passe");
     event.preventDefault();
