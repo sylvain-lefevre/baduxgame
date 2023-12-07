@@ -39,9 +39,7 @@ width: 50vw;
 }
 .sign-in{
   margin: 30vh auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 25vw;
 }
 .sign-in h2{
   text-align: left;
@@ -165,4 +163,11 @@ dialog{
   
 .not-visible{
   display: none !important;
+}
+
+#placeholder{
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: smaller;
+    color: grey;
 }

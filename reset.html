@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <link rel="stylesheet" href="./styles/reset.css">
 </head>
+
 <body>
-    <textarea placeholder="Entrez votre nouveau mot de passe ici" id="reset"></textarea>
-    <ul id="rules"></ul>
-    <button id="return-button"><a href="./index.html" >Retourner à la page de connexion</a></button>
+    <div class="reset-container">
+        <div class="left-part">
+            <textarea placeholder="Entrez votre nouveau mot de passe ici" id="reset"></textarea>
+            <ul id="rules"></ul>
+        </div>
+        <div class="right-part">
+            <h2>Mettez à jour votre mot de passe..</h2>
+            <button id="return-button"><a href="./index.html">Retourner à la page de connexion</a></button>
+        </div>
+    </div>
     <script src="./js/rules.js"></script>
     <script src="./js/reset.js"></script>
 </body>
+
 </html>

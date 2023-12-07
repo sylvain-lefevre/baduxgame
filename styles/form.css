@@ -19,8 +19,8 @@ form{
     border: 1px solid rgba(0,0,0,0.4);
 }
 
-.flex-row-reverse {
-    flex-direction: row-reverse;
+.flex-column-reverse {
+    flex-direction: column-reverse;
 }
 
 #placeholder{
