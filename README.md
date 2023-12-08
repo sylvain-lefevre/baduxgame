@@ -149,10 +149,13 @@ Une demande de localisation est présente au chargelent de la page
 #### Bouton de retour à la page d'accueil
 Un lien permettant de retourner à la page d'accueil est présent sur la page mais très difficile à voir.
 
-- Le lien est situé tout à droite de l'écran à la limite de la bordure vers le milieu
+- Le bouton est situé tout à droite de l'écran à la limite de la bordure vers le milieu
+- Le bouton comporte un lien pour revenir à la page précédente
 - Il est nécessaire de passer la souris dessus et de laisser la souris pour que le lien se déplace vers la gauche de l'écran et apparaisse
-- Le lien n'est cliquable que lorsqu'il s'affiche, le début du composant n'est pas cliquable
+- Le lien n'est cliquable que lorsqu'il s'affiche, le début du bouton n'est pas cliquable
 - La couleur du lien est très proche de la couleur du fond de la page
+- Le bouton peut prendre le focus mais ne fait pas d'action
+- Le lien ne peut pas prendre le focus
 
 ## Solution
 - Se rendre sur la page https://sylvain-lefevre.github.io/baduxgame/
