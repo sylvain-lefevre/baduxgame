@@ -17,7 +17,7 @@ Ce projet a été pensé et mis en oeuvre par une équipe de 8 personnes:
 ## Instructions
 La solution a été pensée de bout en bout en partant de la page suivante https://sylvain-lefevre.github.io/baduxgame/.
 
-:dart: L'objectif étant de réussir à se connecter et de trouver le gland d'or :trophy:
+:trophy: L'objectif étant de réussir à se connecter et de trouver le gland d'or 
 
 Votre nom de connexion est : 0ba7c979-fd67-427b-a594-fd96f0122613
 
