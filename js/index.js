@@ -63,7 +63,7 @@ function init() {
 
 function startLogin() {
   document.getElementById("song").currentTime = 0;
-  document.getElementById("song").volume = 0.01;
+  document.getElementById("song").volume = 0.1;
   document.getElementById("song").play();
   confirmNb = 0;
   openDialog();
