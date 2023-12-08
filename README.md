@@ -41,23 +41,23 @@ La solution est aussi indiquée tout en bas de cette page.
 ### Page d'accueil (index.html)
 Cette page est la page principale et comporte l'ensemble des éléments suivants
 
-#### Champs de connexion
+#### <ins>Champs de connexion</ins>
 - Les deux champs de connexion se situent en bas de la page à l'opposé l'un de l'autre
 - Les deux champs inversent leur position à chaque fois que nous sortons du process de connexion (annulation ou échec de la connexion)
 
 Chacun comporte ses spécificités
 
-##### Champ nom de connexion
+##### <ins>Champ nom de connexion</ins>
 
 - Champ de type password avec possibilité d'afficher le contenu avec l'oeil à droite
 
-##### Champ mot de passe
+##### <ins>Champ mot de passe</ins>
 
 - Contient un faux placeholder qui est simplement un texte par dessus
 - Au clic sur le faux placeholder le focus est mis sur l'input password
 - Se réduit à chaque lettre tapée dans le champ jusqu'à une limite de 50 pixels
 
-#### Texte de bienvenue
+#### <ins>Texte de bienvenue</ins>
 
 - Texte très long qui ne sert pas à grand chose avec différentes tailles de texte
 - Une scrollbar horizontale est présente pour un seul élément du texte
@@ -66,14 +66,14 @@ Chacun comporte ses spécificités
 - Un lien permettant de se rendre sur la page de réinitialisation du mot de passe est présent tout à la fin du texte de couleur très proche avec le fond blanc
 - Ce lien est cliquable uniquement sur le mot "ici"
 
-#### Bouton Connexion
+#### <ins>Bouton Connexion</ins>
 
 - Bouton placé en haut à droite
 - Au survol souris le bouton se déplace légèrement
 - Le texte n'est pas complètement lisible
 - Au clic le bouton déclenche la phase de connexion et un loader le remplace
 
-#### Phase de connexion
+#### <ins>Phase de connexion</ins>
 
 - Au clic sur le bouton de connexion cette phase se lance
 - Un overlay et une modale s'affiche tout en bas de l'écran
@@ -85,7 +85,7 @@ Chacun comporte ses spécificités
 - En cas d'erreur une alerte s'affiche
 - En cas de succès, redirection vers la page success.html
 
-#### Captcha
+#### <ins>Captcha</ins>
 Le captcha est une énigme.
 
 La suite logique correspond à la première lettre de chaque chiffre en anglais
@@ -97,7 +97,7 @@ La réponse est donc E
 - Il est nécessaire de remplir le champ avec la réponse et de cliquer en dehors du champ pour que la réponse soit prise en compte.
 - Suite à la validation du captcha le process de connexion se poursuit (voir ci-dessus)
 
-#### Cookies
+#### <ins>Cookies</ins>
 Un bandeau de cookies est affiché au milieu/bas de l'écran.
 
 - Un petit bouton "Je refuse" est présent
@@ -108,15 +108,15 @@ Un bandeau de cookies est affiché au milieu/bas de l'écran.
 - Un icon draggable est présent sur l'ensemble du bandeau dont les boutons
 - Le bandeau peut être déplacé avec la souris mais lorsque la souris est déplacée il revient à sa place initiale
 
-#### Titres
+#### <ins>Titres</ins>
 Plusieurs titres sont présents avec une mauvaise hiérarchie (h2 puis h3 puis h1)
 
-#### Demande de localisation
+#### <ins>Demande de localisation</ins>
 Une demande de localisation est présente au chargelent de la page
 
 ### Page réinitialisation de mot de passe (reset.html)
 
-#### Champ de réinitialisation
+#### <ins>Champ de réinitialisation</ins>
 
 - Le champ est un textarea
 - Le champ ne fait que maximum 3 caractères de large 
@@ -124,7 +124,7 @@ Une demande de localisation est présente au chargelent de la page
 - Il se superpose un peu sur les règles de réinitialisation
 - Un placeholder difficilement lisible est présent
 
-#### Règles de réinitialisation
+#### <ins>Règles de réinitialisation</ins>
 
 - La première règle ne s'affiche que lorsque l'utilisateur entre dans le champ de réinitialisation
 - Une règle s'affiche en rouge si elle est validée
@@ -134,19 +134,19 @@ Une demande de localisation est présente au chargelent de la page
 - Lorsque toutes les règles sont validées, une alerte s'affiche pour informer l'utilisateur
 - Il existe 11 règles pour valider la réinitialisation
 
-    - minimum 5 caractères
-    - minimum 1 lettre et 1 chiffre
-    - minimum 1 caractère spécial (la liste des caractères acceptés n'est pas indiquée dans l'IHM => $&+,:;=?@#|'<>.^*()%!- )
-    - minimum 1 lettre capitale
-    - doit contenir autant de lettres que de chiffres
-    - la somme des chiffres présents doit être divisible par 5. On parle bien ici de la somme de tous les chiffres présents
-    - ne doit pas contenir 1234
-    - doit contenir le symbole chimique de l'étain => Sn (la casse est importante)
-    - doit contenir le numéro atomique de l'argent => 47
-    - doit contenir le code postal d'Ecully => 69130
-    - doit contenir le nom de la capitale de Madagascar => Antananarivo (la casse n'est pas importante)
+    - *minimum 5 caractères*
+    - *minimum 1 lettre et 1 chiffre*
+    - *minimum 1 caractère spécial* (la liste des caractères acceptés n'est pas indiquée dans l'IHM => **$&+,:;=?@#|'<>.^*()%!-** )
+    - *minimum 1 lettre capitale*
+    - *doit contenir autant de lettres que de chiffres*
+    - *la somme des chiffres présents doit être divisible par 5*. On parle bien ici de la somme de tous les chiffres présents
+    - *ne doit pas contenir 1234*
+    - *doit contenir le symbole chimique de l'étain* => **Sn** (la casse est importante)
+    - *doit contenir le numéro atomique de l'argent* => **47**
+    - *doit contenir le code postal d'Ecully* => **69130**
+    - *doit contenir le nom de la capitale de Madagascar* => **Antananarivo** (la casse n'est pas importante)
 
-#### Bouton de retour à la page d'accueil
+#### <ins>Bouton de retour à la page d'accueil</ins>
 Un lien permettant de retourner à la page d'accueil est présent sur la page mais très difficile à voir.
 
 - Le bouton est situé tout à droite de l'écran à la limite de la bordure vers le milieu
