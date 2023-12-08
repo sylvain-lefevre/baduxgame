@@ -112,7 +112,7 @@ Un bandeau de cookies est affiché au milieu/bas de l'écran.
 Plusieurs titres sont présents avec une mauvaise hiérarchie (h2 puis h3 puis h1)
 
 #### <ins>Demande de localisation</ins>
-Une demande de localisation est présente au chargelent de la page
+Une demande de localisation est présente au chargement de la page
 
 ### Page réinitialisation de mot de passe (reset.html)
 
