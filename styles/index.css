@@ -45,11 +45,8 @@ width: 50vw;
   text-align: left;
 }
 #welcome-container{
-  width: 25vw;
-  overflow-y: auto;
-}
-#welcome-container::-webkit-scrollbar {
- width: 0;
+  width: 10vw;
+  overflow-y: scroll;
 }
 
 #btn-login{

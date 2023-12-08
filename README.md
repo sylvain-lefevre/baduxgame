@@ -60,7 +60,7 @@ Chacun comporte ses spécificités
 #### Texte de bienvenue
 
 - Texte très long qui ne sert pas à grand chose avec différentes tailles de texte
-- Une scrollbar horizontale est présente mais ne sert à rien
+- Une scrollbar horizontale est présente pour un seul élément du texte
 - La scrollbar verticale est désactivée
 - La taille du champ dépasse la taille de la page
 - Un lien permettant de se rendre sur la page de réinitialisation du mot de passe est présent tout à la fin du texte de couleur très proche avec le fond blanc
