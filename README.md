@@ -68,7 +68,8 @@ Chacun comporte ses spécificités
 
 #### Bouton Connexion
 
-- Bouton rond placé en haut à droite
+- Bouton placé en haut à droite
+- Au survol souris le bouton se déplace légèrement
 - Le texte n'est pas complètement lisible
 - Au clic le bouton déclenche la phase de connexion et un loader le remplace
 
