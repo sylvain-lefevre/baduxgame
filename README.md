@@ -17,7 +17,7 @@ Ce projet a été pensé et mis en oeuvre par une équipe de 8 personnes:
 ## Instructions
 La solution a été pensée de bout en bout en partant de la page suivante https://sylvain-lefevre.github.io/baduxgame/.
 
-:dart: L'objectif étant de réussir à se connecter.
+:dart: L'objectif étant de réussir à se connecter et de trouver le gland d'or :trophy:
 
 Votre nom de connexion est : 0ba7c979-fd67-427b-a594-fd96f0122613
 
@@ -156,6 +156,9 @@ Un lien permettant de retourner à la page d'accueil est présent sur la page ma
 - La couleur du lien est très proche de la couleur du fond de la page
 - Le bouton peut prendre le focus mais ne fait pas d'action
 - Le lien ne peut pas prendre le focus
+
+### Page de succès (success.html)
+Une simple page affichant un titre et un joli gland en tant que trophée
 
 ## Solution
 - Se rendre sur la page https://sylvain-lefevre.github.io/baduxgame/
