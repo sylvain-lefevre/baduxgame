@@ -43,7 +43,6 @@ h2{
     width: 30%;
     z-index: 99;
     left: calc(100% - 15px);
-    transition: all 15s ease-in;
     text-align: right;
     background-color: transparent;
     border: 1px solid #394556;
@@ -51,7 +50,7 @@ h2{
 
 }
 #return-button a{
-    color: whitesmoke;
+    color: #394556;
     text-decoration: none;
 }
 #return-button:hover {
